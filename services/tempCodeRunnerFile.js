@@ -1,0 +1,1 @@
+const result = await model.generateContent(prompt);

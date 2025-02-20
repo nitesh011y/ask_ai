@@ -1,0 +1,79 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  background-color: #303030; /* Entire screen is dark grey */
+  color: white; /* Ensures text remains readable */
+  display: flex;
+  justify-content: center; /* Center container horizontally */
+  align-items: center; /* Center container vertically */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  max-width: 800px;
+  margin: auto;
+  background-color: #404040; /* Slightly lighter grey for container */
+  border-radius: 10px;
+  padding: 20px;
+}
+
+form {
+  width: 100%;
+}
+
+textarea {
+  width: 100%;
+  height: 60vh;
+  background-color: black;
+  color: white;
+  border: 1px solid #ccc;
+  padding: 10px;
+  font-size: 16px;
+  resize: none; /* Prevent resizing */
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+button {
+  width: 100%;
+  padding: 15px;
+  background-color: #606060;
+  color: white;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+button:hover {
+  background-color: white;
+  color: black;
+}
+
+#output {
+  width: 100%;
+  height: auto;
+  background-color: black;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  text-align: center;
+  margin-top: 20px;
+  padding: 20px;
+  color: white;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .container {
+    width: 95%;
+  }
+
+  textarea {
+    height: 50vh;
+  }
+}
